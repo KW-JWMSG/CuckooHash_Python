@@ -57,11 +57,19 @@ class CuckooHashing:
         print('\t'.join([str(i) for i in range(len(self.h))]))
         print('\t'.join([str(i[0]) for i in self.h]))
 
+        #13 오류 해결코드
+        # print('\t'.join([str(i) for i in range(len(self.h)-1)]))
+        # print('\t'.join([str(i[0]) for i in self.h][:-1]))
+
 
         print('d-table:')
             #### d-table 출력 : 구현하시오 
-        print('\t'.join([str(i) for i in range(len(self.d))]))
-        print('\t'.join([str(i[0]) for i in self.d]))
+        # print('\t'.join([str(i) for i in range(len(self.d))]))
+        # print('\t'.join([str(i[0]) for i in self.d]))
+
+        #13 오류 해결코드
+        # print('\t'.join([str(i) for i in range(len(self.d)-1)]))
+        # print('\t'.join([str(i[0]) for i in self.d][:-1]))
 
 if __name__ == '__main__':
     t = CuckooHashing(13)
